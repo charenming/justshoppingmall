@@ -44,6 +44,7 @@ nav {float:right;}
 .subMenu {
         position:absolute;
         display: none;
+        z-index: 10;
 }
 .subMenu>li {
             width:200px;
@@ -87,10 +88,80 @@ nav {float:right;}
 
 
 
-
-#contents {
+#contents { 
             height:200px;
+           
 }
+section {
+        float:left;
+        width:400px;
+        box-sizing: border-box;
+}
+
+.tab {
+}
+.tabMenu {
+            height:40px;
+            overflow: hidden; 
+            line-height: 40px;
+        }
+.tabMenu>a {
+            float:left;
+            width:80px;
+            background-color: darkslategray;
+            color:#fff;
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: normal;  
+}
+
+.tabMenu>a.on {
+                background-color: salmon;
+                color:fff;
+}
+
+.tabContent {
+ 
+}
+.notice {
+            height:160px;
+            padding:0 10px;
+}
+.notice>li {
+            line-height: 2.5;
+            
+}
+.notice>li:nth-of-type(2n) {background-color: salmon;
+                            }
+.notice>li:nth-of-type(2n)>a {color:#fff;
+                            }
+.notice>li:nth-of-type(2n)>span {color:#fff;
+                            }
+.notice>li>a {color:#333;}
+.notice>li>span {
+                    float:right;
+}
+
+.gallery {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:0 10px;
+}
+.gallery>li>a>img {width:110%;}
+
+
+
+.banner {}
+.imgbox {
+}
+.imgbox>a {padding:20px;}
+.imgbox>a>img {
+                width:400px;
+                overflow: hidden;}
+
+
 
 footer {
         height:100px;
